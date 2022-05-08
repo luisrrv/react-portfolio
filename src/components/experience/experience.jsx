@@ -15,8 +15,8 @@ import {SiMongodb} from "react-icons/si";
 const Experience = () => {
   return (
     <section id='experience' >
-      <h5>My Skills</h5>
-      <h2>My Experience</h2>
+      {/* <h5>My Skills</h5> */}
+      <h2>Skills</h2>
 
       <div className="container experience__container">
         <div className="experience__frontend">
@@ -26,42 +26,42 @@ const Experience = () => {
               <AiFillHtml5 className='experience__details-icon'/>
               <div>
                 <h4>HTML</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <DiCss3Full className='experience__details-icon'/>
               <div>
                 <h4>CSS</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <SiJavascript className='experience__details-icon'/>
               <div>
                 <h4>JavaScript</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <BsBootstrapFill className='experience__details-icon'/>
               <div>
                 <h4>Bootstrap</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <FaReact className='experience__details-icon'/>
               <div>
                 <h4>React</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <FaSass className='experience__details-icon'/>
               <div>
                 <h4>SASS</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
           </div>
@@ -73,35 +73,35 @@ const Experience = () => {
               <DiRubyRough className='experience__details-icon'/>
               <div>
                 <h4>Ruby</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <GrGraphQl className='experience__details-icon'/>
               <div>
                 <h4>Graphql</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <SiPostgresql className='experience__details-icon'/>
               <div>
                 <h4>PostgreSQL</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <SiRubyonrails className='experience__details-icon'/>
               <div>
                 <h4>Rails</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <SiMongodb className='experience__details-icon'/>
               <div>
                 <h4>MongoDB</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
           </div>

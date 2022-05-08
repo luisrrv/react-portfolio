@@ -7,7 +7,7 @@ import {BsInstagram} from 'react-icons/bs'
 const Footer = () => {
   return (
     <footer>
-      <a href="#footer" className="footer__logo">Luis Rodriguez</a>
+      {/* <a href="#footer" className="footer__logo">Luis Rodriguez</a> */}
 
       <ul className="permalinks">
         <li><a href="#home">Home</a></li>
