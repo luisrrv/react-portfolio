@@ -1,13 +1,15 @@
 nav {
   background: rgba(0, 0, 0, 0.3);
   width: max-content;
-  display: block;
-  padding: 0.7rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem 0.7rem;
   z-index: 2;
   position: fixed;
-  left: 50%;
+  left: 95%;
+  top: 1rem;
   transform: translateX(-50%);
-  bottom: 2rem;
+  /* bottom: 2rem; */
   display: flex;
   gap: 0.8rem;
   border-radius: 3rem;
@@ -15,12 +17,21 @@ nav {
 }
 
 nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: transparent;
-  padding: 0.9rem;
+  padding: 0.7rem;
+  height: 56px;
+  width: 56px;
   border-radius: 50%;
   display: flex;
   color: var(--color-light);
   font-size: 1.1rem;
+}
+#nav-text {
+  font-size: 10px;
 }
 
 nav a:hover {
@@ -30,4 +41,47 @@ nav a:hover {
 nav a.active {
   background: var(--color-primary);
   color: var(--color-white);
+}
+
+
+/* ----------------------- MEDIA QUERIES (medium) ------------------------ */
+
+@media screen and (max-width: 1024px) {
+  nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    top: unset;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+}
+
+/* ----------------------- MEDIA QUERIES (small) ------------------------ */
+
+@media screen and (max-width: 600px) {
+  nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
 }

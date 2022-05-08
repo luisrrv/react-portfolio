@@ -1,20 +1,37 @@
 header {
-  height: 100vh;
-  padding-top: 7rem;
-  overflow: hidden;
-  background: #18191d;
+  min-height: 100vh;
+  /* padding-top: 7rem; */
+  /* overflow: hidden; */
+  background: #212121;
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover; */
 }
 
 .header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  height: 100%;
-  position: relative;
+  min-height: 100vh;
+  /* position: relative; */
+  /* height: 1500px */
 }
+
+/* .me-image {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 /* --------------------CTA-------------------------- */
 
 .cta {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
@@ -31,6 +48,7 @@ header {
   position: absolute;
   left: 0;
   bottom: 3rem;
+  padding: 1.5rem;
   z-index: 33;
 }
 
@@ -55,21 +73,21 @@ header {
   padding: 3rem 0 0 0;
 } */
 
-.me {
+/* .me {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  /* background: linear-gradient(
+  background: linear-gradient(
     45deg,
     transparent,
     var(--color-primary),
     transparent
-  ); */
-  /* display: grid;
-  place-items: center; */
+  );
+  display: grid;
+  place-items: center;
   position: absolute;
   left: -5%;
-}
+} */
 
 .me-image {
   border-radius: 2rem;
@@ -91,13 +109,18 @@ header {
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
+  padding: 1.5rem;
 }
 
 /* ----------------------- MEDIA QUERIES (medium) ------------------------ */
 
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
+    min-height: 100vh;
+  }
+  .header__container {
+    min-height: 100vh;
+    justify-content: center;
   }
   }
 
@@ -105,10 +128,163 @@ header {
 
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    min-height: 140vh;
+  }
+  .header__container {
+    min-height: 140vh;
   }
 
   .header__socials, .scroll__down {
     display: none;
+  }
+}
+
+
+/* -------------------ABOUT------------------------------------ */
+
+.aboutme {
+  margin-top: 4rem;
+}
+
+.aboutme > h2, section > h5 {
+  text-align: center;
+  color: var(--color-light);
+}
+
+.aboutme > h2 {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about__me {
+width: 20rem;
+height: 20rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.about__me-image {
+  border-radius: 2rem;
+  overflow: hidden;
+  /* transform: rotate(10deg); */
+  transition: var(--transition);
+}
+.about__me-image img {
+  height: 24rem;
+}
+.about__me-image:hover {
+  transform: rotate(0);
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.about__card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  /* width: 9rem; */
+  transition: var(--transition);
+}
+
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.about__icon {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about__card h5 {
+  font-size: 0.95rem;
+}
+
+.about__card small {
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+
+.about__content p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-light);
+}
+
+/* ----------------------- MEDIA QUERIES (medium) ------------------------ */
+
+@media screen and (max-width: 1024px) {
+  .aboutme {
+    margin-top: 0;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__me {
+    width: 50%;
+    height: 50%;
+    margin: 2rem auto 4rem;
+  }
+
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+/* ----------------------- MEDIA QUERIES (small) ------------------------ */
+
+@media screen and (max-width: 600px) {
+  .aboutme {
+    margin-top: 0;
+  }
+  .about__me {
+    width: 60%;
+    margin: 0 auto 3rem;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+
+  .about__me-image img {
+    height: 13rem;
   }
 }
