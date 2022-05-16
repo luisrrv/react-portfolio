@@ -62,6 +62,10 @@
   .experience__content {
     padding: 1rem;
   }
+  .experience__details-icon {
+    width: 4em;
+    height: 3em;
+  }
 }
 
 /* ----------------------- MEDIA QUERIES (small) ------------------------ */

@@ -44,7 +44,7 @@ body {
 /* --------------- GENERAL STYLES --------------- */
 
 .container {
-  width: var(--container-width-lg);
+  max-width: var(--container-width-lg);
   margin: 0 auto;
 }
 
@@ -116,7 +116,7 @@ img {
 
 @media screen and (max-width: 1024px) {
   .container {
-    width: var(--container-width-md);
+    max-width: var(--container-width-md);
   }
 
   section {
@@ -124,11 +124,13 @@ img {
   }
 }
 
+
+
 /* ----------------------- MEDIA QUERIES (small) ------------------------ */
 
 @media screen and (max-width: 600px) {
   .container {
-    width: var(--container-width-sm);
+    max-width: var(--container-width-sm);
   }
 
   section > h2 {

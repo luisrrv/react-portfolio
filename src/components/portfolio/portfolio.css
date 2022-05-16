@@ -6,7 +6,7 @@
 
 .portfolio__item {
   background: var(--color-bg-variant);
-  padding: 1.3rem;
+  /* padding: 1.3rem; */
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
@@ -18,20 +18,24 @@
 }
 
 .portfolio__item-image {
-  border-radius: 1.5rem;
+  border-radius: 1.5rem 1.5rem 0 0 ;
   overflow: hidden;
 }
 
 .portfolio__item h3 {
   margin: 1.2rem 0 2rem;
+  padding: 0 1rem;
 }
 
 .portfolio__item-cta {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  padding: 0 1rem;
 }
-
+.portfolio__item-cta > .btn {
+  padding: 0.5rem 0.6rem;
+}
 /* ----------------------- MEDIA QUERIES (medium) ------------------------ */
 
 @media screen and (max-width: 1024px) {
