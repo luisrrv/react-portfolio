@@ -3,9 +3,9 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/me-header-pt.png'
 import HeaderSocials from './HeaderSocials'
-import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
-import {VscFolderLibrary} from 'react-icons/vsc'
+// import {FaAward} from 'react-icons/fa'
+// import {FiUsers} from 'react-icons/fi'
+// import {VscFolderLibrary} from 'react-icons/vsc'
 
 const Header = () => {
   return (
@@ -30,9 +30,10 @@ const Header = () => {
             <img src={ME} alt="About" />
           </div>
         </div>
+        {/* <a href="#contact" className="btn btn-primary">Let's Talk</a> */}
 
         <div className="about__content">
-          <div className="about__cards">
+          {/* <div className="about__cards">
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>experience</h5>
@@ -48,11 +49,10 @@ const Header = () => {
               <h5>projects</h5>
               <small>100 projects</small>
             </article>
-          </div>
+          </div> */}
 
           <p>I am a passionate software developer. I am always involved in new projects in order to develop quality products. I like to work with others and</p>
 
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </div>
       </div>
         </div>
