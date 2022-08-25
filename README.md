@@ -1,4 +1,4 @@
-# react-porfolio-page
+# react-porfolio-page (work in progress)
 #### My personal portfolio page (work in progress)
 
 ### If you want to run the server
